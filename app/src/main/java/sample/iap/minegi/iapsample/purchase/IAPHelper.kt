@@ -1,7 +1,5 @@
 package sample.iap.minegi.iapsample.purchase
 
-import android.content.Context
-
-class IAPHelper(context: Context) {
+class IAPHelper(private val ui: UserInterface) {
 
 }
