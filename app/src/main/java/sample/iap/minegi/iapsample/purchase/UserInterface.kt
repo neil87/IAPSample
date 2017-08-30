@@ -4,8 +4,8 @@ import android.app.Activity
 import android.content.Context
 import android.support.v4.app.Fragment
 
-class UserInterface(val activity: Activity) {
-    constructor(fragment: Fragment) : this(fragment.activity) {
+class UserInterface(var activity: Activity) {
+    constructor(fragment: Fragment) : this(checkNotNull(fragment.activity)) {
         this.fragment = fragment
     }
 

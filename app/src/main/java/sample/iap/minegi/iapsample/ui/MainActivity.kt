@@ -1,7 +1,8 @@
-package sample.iap.minegi.iapsample
+package sample.iap.minegi.iapsample.ui
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import sample.iap.minegi.iapsample.R
 
 class MainActivity : AppCompatActivity() {
 
