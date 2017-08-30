@@ -12,8 +12,8 @@ import io.reactivex.Single.create
 import sample.iap.minegi.iapsample.BuildConfig
 import sample.iap.minegi.iapsample.purchase.IapConstants.IAP_BIND_INTENT_ACTION
 import sample.iap.minegi.iapsample.purchase.IapConstants.IAP_VENDING_PACKAGE_NAME
-import sample.iap.minegi.iapsample.purchase.exception.IapStatus.SERVICE_DISCONNECTED
 import sample.iap.minegi.iapsample.purchase.exception.IapException
+import sample.iap.minegi.iapsample.purchase.exception.IapStatus.SERVICE_DISCONNECTED
 import sample.iap.minegi.iapsample.purchase.model.DummyValue
 
 class IapHelperV3(private val ui: UserInterface) {
@@ -66,8 +66,6 @@ class IapHelperV3(private val ui: UserInterface) {
             inAppBillingService = null
         }
     }
-
-    fun isBillingSupported()
 
     private fun log(message: String) {
         if (BuildConfig.DEV_MODE) {
