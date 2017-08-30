@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -70,7 +70,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="32dp"
             android:background="@drawable/ic_coin"
-            app:layout_constraintEnd_toStartOf="@id/img_coin_2500"
+            app:layout_constraintEnd_toStartOf="@+id/img_coin_2500"
             app:layout_constraintStart_toEndOf="@+id/img_coin_500"
             app:layout_constraintTop_toBottomOf="@+id/img_my_coin" />
 
@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:text="@string/text_1200"
             android:textSize="24dp"
-            app:layout_constraintEnd_toEndOf="@id/img_coin_1200"
+            app:layout_constraintEnd_toEndOf="@+id/img_coin_1200"
             app:layout_constraintStart_toStartOf="@+id/img_coin_1200"
             app:layout_constraintTop_toBottomOf="@+id/img_coin_1200" />
 
@@ -114,7 +114,7 @@
             android:layout_height="wrap_content"
             android:text="@string/text_2500"
             android:textSize="24dp"
-            app:layout_constraintEnd_toEndOf="@id/img_coin_2500"
+            app:layout_constraintEnd_toEndOf="@+id/img_coin_2500"
             app:layout_constraintStart_toStartOf="@+id/img_coin_2500"
             app:layout_constraintTop_toBottomOf="@+id/img_coin_2500" />
 
