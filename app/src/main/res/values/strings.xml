@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">IAPSample</string>
+    <string name="label_my_coin">My Coin</string>
 </resources>
