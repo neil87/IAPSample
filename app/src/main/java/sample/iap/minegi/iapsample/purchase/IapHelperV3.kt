@@ -29,6 +29,12 @@ class IapHelperV3(private val ui: UserInterface) {
         }
     }
 
+    private fun log(message: String) {
+        if (BuildConfig.DEV_MODE) {
+            Log.d(uiName(), message)
+        }
+    }
+
     private fun connectService(): Single<DummyValue> {
         return create<DummyValue> { emitter ->
             if (serviceConnection != null) {
@@ -64,12 +70,6 @@ class IapHelperV3(private val ui: UserInterface) {
         inAppBillingService?.let {
             context.unbindService(serviceConnection)
             inAppBillingService = null
-        }
-    }
-
-    private fun log(message: String) {
-        if (BuildConfig.DEV_MODE) {
-            Log.d(uiName(), message)
         }
     }
 }
