@@ -4,4 +4,5 @@
     <string name="text_500">500</string>
     <string name="text_1200">1,200</string>
     <string name="text_2500">2,500</string>
+    <string name="is_billing_supported">isBillingSupported</string>
 </resources>
